@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sp v6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-10 01:20-0700\n"
+"POT-Creation-Date: 2009-11-25 14:22-0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
-"Language-Team: Utopian.net Labs <josh@labs.utopian.net>\n"
+"Language-Team: Utopian.net Laboratories <utopian.labs@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:126
+#: theme.php:134
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] ""
@@ -45,22 +45,6 @@ msgstr ""
 
 #: comments.php:43
 msgid "Comments closed."
-msgstr ""
-
-#: db_profiling.php:28
-msgid "DB Profiling"
-msgstr ""
-
-#: db_profiling.php:39
-msgid "Time to Execute:"
-msgstr ""
-
-#: db_profiling.php:53
-msgid "Total Number of Queries:"
-msgstr ""
-
-#: db_profiling.php:54
-msgid "Total Time Executing Queries:"
 msgstr ""
 
 #: entry.multiple.php:16
@@ -116,7 +100,7 @@ msgid "from"
 msgstr ""
 
 #: loginform.php:2
-msgid "That login is incorrect."
+msgid "Login failed."
 msgstr ""
 
 #: loginform.php:6
@@ -132,7 +116,7 @@ msgid "Log out"
 msgstr ""
 
 #: loginform.php:14
-#: theme.php:115
+#: theme.php:123
 msgid "Name:"
 msgstr ""
 
@@ -168,15 +152,7 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: sidebar.php:32
-msgid "Tags"
-msgstr ""
-
-#: sidebar.php:39
-msgid "Archives"
-msgstr ""
-
-#: sidebar.php:44
+#: sidebar.php:17
 msgid "Syndicate (Atom)"
 msgstr ""
 
@@ -189,48 +165,48 @@ msgstr ""
 msgid "--More--"
 msgstr ""
 
-#: theme.php:84
+#: theme.php:89
 msgid " Search"
 msgstr ""
 
-#: theme.php:85
+#: theme.php:90
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:89
+#: theme.php:96
 msgid " &rsaquo; Page "
 msgstr ""
 
-#: theme.php:104
+#: theme.php:111
 msgid "Dated "
 msgstr ""
 
-#: theme.php:111
+#: theme.php:119
 msgid "About You"
 msgstr ""
 
-#: theme.php:115
+#: theme.php:123
 msgid "Required"
 msgstr ""
 
-#: theme.php:118
+#: theme.php:126
 msgid "Email:"
 msgstr ""
 
-#: theme.php:118
+#: theme.php:126
 msgid "Required - not published"
 msgstr ""
 
-#: theme.php:121
+#: theme.php:129
 msgid "URL:"
 msgstr ""
 
-#: theme.php:130
+#: theme.php:138
 msgid "(Required)"
 msgstr ""
 
-#: theme.php:132
+#: theme.php:140
 msgid "Submit"
 msgstr ""
 
