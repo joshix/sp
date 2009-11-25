@@ -1,5 +1,5 @@
 <?php if ( isset( $error ) ) : ?>
-<p><?php _e( 'That login is incorrect.', 'sp' ); ?></p>
+<p><?php _e( 'Login failed.', 'sp' ); ?></p>
 <?php endif; ?>
 <?php if ( $loggedin ): ?>
 <p>
