@@ -40,7 +40,7 @@ class SpTheme extends Theme
 
 		/* Pretty tag names incl. spaces */
 		if(Controller::get_var('tag') != ''){
-			$tag_text = DB::get_value('SELECT tag_text FROM {tags} WHERE tag_slug=?', array( Controller::get_var('tag') ) );
+			$tag_text = DB::get_value('SELECT term_display FROM {terms} WHERE term=?', array( Controller::get_var('tag') ) );
 			$this->assign('tag_text', $tag_text);
 		}
 
