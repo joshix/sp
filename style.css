@@ -29,12 +29,12 @@ body{
 }
 
 #content{
-	margin:10px;
+	margin: 10px;
 }
 
 #primarycontent{
 	float: left;
-	width:650px;
+	width: 650px;
 }
 
 #secondarycontent{
@@ -55,13 +55,13 @@ body{
 }
 
 #header a:link, #header a:visited{
-	color:#000;
+	color: #000;
 	text-decoration: none;
 }
 
 #header a:hover, #header a:active{
 	background: transparent;
-	color:#760909;
+	color: #760909;
 	text-decoration: none;
 }
 
