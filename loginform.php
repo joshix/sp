@@ -1,7 +1,7 @@
 <?php if ( isset( $error ) ) : ?>
 <p><?php _e( 'That login is incorrect.', 'sp' ); ?></p>
 <?php endif; ?>
-<?php if( $loggedin ): ?>
+<?php if ( $loggedin ): ?>
 <p>
 	<?php _e( 'Logged in as', 'sp' ); ?> <a href="<?php URL::out( 'admin', 'page=user&user=' . $user->username ) ?>" title="<?php _e( 'Edit Your Profile', 'sp' ); ?>"><?php echo $user->username; ?></a> | 
 	<a href="<?php Site::out_url( 'habari' ); ?>/user/logout"><?php _e( 'Log out', 'sp' ); ?></a>

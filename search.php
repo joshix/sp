@@ -3,7 +3,7 @@
 		<div id="primarycontent" class="hfeed">
 			<!--begin loop-->
 			<h1 class="archive-title"><?php _e( 'Results for', 'sp' ); ?> &#8220;<span class="archive-subtitle"><?php echo $criteria; /* Should it use htmlspecialchars()? */ ?></span>&#8221;</h1>
-		<?php if( isset( $post ) ) : ?>
+		<?php if ( isset( $post ) ) : ?>
 			<?php foreach ( $posts as $post ) : ?>
 				<div id="post-<?php echo $post->id; ?>" class="hentry">
 <?php include 'entryhead.php'; ?>

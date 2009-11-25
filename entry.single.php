@@ -12,12 +12,12 @@
 			<!--end loop-->
 			<?php $theme->display( 'comments' ); ?>
 			<div id="postnav" class="navigation">
-				<?php if($previous = $post->ascend()) : ?>
+			<?php if ( $previous = $post->ascend() ) : ?>
 				<span class="prev-entry-link"> &laquo; <a href="<?php echo $previous->permalink ?>" title="<?php echo $previous->slug ?>"><?php echo $previous->title ?></a></span>
-				<?php endif; ?>
-				<?php if($next = $post->descend()) : ?>
+			<?php endif; ?>
+			<?php if ( $next = $post->descend() ) : ?>
 				<span class="next-entry-link"><a href="<?php echo $next->permalink ?>" title="<?php echo $next->slug ?>"><?php echo $next->title ?></a> &raquo;</span>
-				<?php endif; ?>
+			<?php endif; ?>
 			</div><!--#postnav-->
 
 		</div><!--#primarycontent-->

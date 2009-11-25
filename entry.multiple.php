@@ -4,11 +4,11 @@
 			<!--begin loop-->
 			<?php foreach ( $posts as $post ) : ?>
 				<div id="post-<?php echo $post->id; ?>" class="hentry">
-<?php include 'entryhead.php'; ?>
+				<?php include 'entryhead.php'; ?>
 					<div class="entry-content">
 						<?php echo $post->content_out; ?>
 					</div>
-<?php include 'entrymeta.php'; ?>
+				<?php include 'entrymeta.php'; ?>
 				</div><!--#post-num .hentry-->
 			<?php endforeach; ?>
 			<!--end loop-->

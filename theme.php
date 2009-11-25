@@ -35,73 +35,80 @@ class SpTheme extends Theme
 	 */	 	 	 	 	
 	public function add_template_vars() 
 	{
-		if(!$this->template_engine->assigned('pages'))
-			$this->assign('pages', Posts::get(array('content_type' => 'page', 'status' => Post::status('published'))));
+		if ( !$this->template_engine->assigned( 'pages' ) ) {
+			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => Post::status( 'published' ) ) ) );
+		}
 
 		/* Pretty tag names incl. spaces */
-		if(Controller::get_var('tag') != ''){
-			$tag_text = DB::get_value('SELECT term_display FROM {terms} WHERE term=?', array( Controller::get_var('tag') ) );
-			$this->assign('tag_text', $tag_text);
+		if ( Controller::get_var( 'tag' ) != '') {
+			$tag_text = DB::get_value( 'SELECT term_display FROM {terms} WHERE term=?', array( Controller::get_var( 'tag' ) ) );
+			$this->assign( 'tag_text', $tag_text );
 		}
 
 		parent::add_template_vars();
 	}
 
 	/* Hook header output to insert some meta robots directives. */
-	public function filter_theme_call_header($return, $theme)
+	public function filter_theme_call_header( $return, $theme )
 	{
 		$r = $this->request;
-		if($r->display_search)
+		if ( $r->display_search ) {
 			return '<meta name="robots" content="noindex, nofollow">'."\n";
-		elseif($r->display_entries_by_date || $r->display_entries_by_tag)
+		}
+		elseif ( $r->display_entries_by_date || $r->display_entries_by_tag ) {
 			return '<meta name="robots" content="noindex, follow">'."\n";
-
+		}
 		return $return;
 	}
 
-	public function theme_title($theme)
+	public function theme_title( $theme )
 	{
 		$title = '';
 
-		$hv = (count($this->handler_vars) != 0) ? $this->handler_vars : Controller::get_handler()->handler_vars;
+		$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
 		$r = $this->request;
-		$stitle = Options::get('title');
+		$stitle = Options::get( 'title' );
 		$ps = $this->posts;
-		if($r->display_entries_by_date && count($hv) > 0){
+		if ( $r->display_entries_by_date && count( $hv ) > 0 ) {
 			$date = '';
-			$date .= isset($hv['year']) ? $hv['year'] : '' ;
-			$date .= isset($hv['month']) ? '-' . $hv['month'] : '' ;
-			$date .= isset($hv['day']) ? '-' . $hv['day'] : '' ;
+			$date .= isset( $hv['year'] ) ? $hv['year'] : '' ;
+			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '' ;
+			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '' ;
 			$title = $date . ' - ' . $stitle;
-		}elseif($r->display_entries_by_tag && isset($hv['tag'])){
-			$tag = (count($ps) > 0) ? $ps[0]->tags[$hv['tag']] : $hv['tag'] ;
-			$title = htmlspecialchars($tag) . ' - ' . $stitle;
-		}elseif(($r->display_entry || $r->display_page) && isset($ps))
-			$title = strip_tags($ps->title) . ' - ' . $stitle;
-		elseif($r->display_search){
+		}
+		elseif ( $r->display_entries_by_tag && isset( $hv['tag'] ) ) {
+			$tag = ( count( $ps ) > 0 ) ? $ps[0]->tags[$hv['tag']] : $hv['tag'] ;
+			$title = htmlspecialchars( $tag ) . ' - ' . $stitle;
+		}
+		elseif ( ( $r->display_entry || $r->display_page ) && isset( $ps ) ) {
+			$title = strip_tags( $ps->title ) . ' - ' . $stitle;
+		}
+		elseif ( $r->display_search ) {
 			/* Set title to the search criteria, or to EMPTY if there were none. */
-			$q = Controller::get_var('criteria');
-			$title = ($q != '') ? htmlspecialchars($q) . ' - ' . $stitle . _t(' Search', 'sp') :
-						sprintf(_t('Empty %1$s Search', 'sp'), $stitle);
-		}else
+			$q = Controller::get_var( 'criteria' );
+			$title = ( $q != '' ) ? htmlspecialchars( $q ) . ' - ' . $stitle . _t( ' Search', 'sp' ) :
+						sprintf( _t( 'Empty %1$s Search', 'sp' ), $stitle );
+		}
+		else {
 			$title = $stitle;
-		if($this->page > 1)
-			$title .= _t(' &rsaquo; Page ') . $this->page;
-
+		}
+		if ( $this->page > 1 ) {
+			$title .= _t( ' &rsaquo; Page ' ) . $this->page;
+		}
 		return $title;
 	}
 
-	public function theme_multiple_heading($theme,$criteria)
+	public function theme_multiple_heading( $theme,$criteria )
 	{
 		$heading = '';
 
-		$hv = (count($this->handler_vars) != 0) ? $this->handler_vars : Controller::get_handler()->handler_vars;
-		if($this->request->display_entries_by_date && count($hv) > 0){
+		$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
+		if ( $this->request->display_entries_by_date && count( $hv ) > 0 ) {
 			$date = '';
-			$date .= isset($hv['year']) ? $hv['year'] : '' ;
-			$date .= isset($hv['month']) ? '-' . $hv['month'] : '' ;
-			$date .= isset($hv['day']) ? '-' . $hv['day'] : '' ;
-			$heading = _t('Dated ', 'sp') . $date;
+			$date .= isset( $hv['year'] ) ? $hv['year'] : '' ;
+			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '' ;
+			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '' ;
+			$heading = _t( 'Dated ', 'sp' ) . $date;
 		}
 		return $heading;
 	}
@@ -109,28 +116,28 @@ class SpTheme extends Theme
 	/* Customize comment formui. Add fieldsets. */
 	public function action_form_comment($form)
 	{
-		$form->append('fieldset', 'commenterinfo', _t('About You', 'sp'));
-		$form->move_before($form->commenterinfo, $form->commenter);
+		$form->append( 'fieldset', 'commenterinfo', _t( 'About You', 'sp' ) );
+		$form->move_before( $form->commenterinfo, $form->commenter );
 
-		$form->commenter->move_into($form->commenterinfo);
-		$form->commenter->caption = _t('Name:', 'sp') . '<span class="required">' . (Options::get('comments_require_id') == 1 ? ' *' . _t('Required', 'sp') : '') . '</span>';
+		$form->commenter->move_into( $form->commenterinfo );
+		$form->commenter->caption = _t( 'Name:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required', 'sp' ) : '' ) . '</span>';
 
-		$form->email->move_into($form->commenterinfo);
-		$form->email->caption = _t('Email:', 'sp') . '<span class="required">' . (Options::get('comments_require_id') == 1 ? ' *' . _t('Required - not published', 'sp') : '') . '</span>';
+		$form->email->move_into( $form->commenterinfo );
+		$form->email->caption = _t( 'Email:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required - not published', 'sp' ) : '' ) . '</span>';
 
-		$form->url->move_into($form->commenterinfo);
-		$form->url->caption = _t('URL:', 'sp');
+		$form->url->move_into( $form->commenterinfo );
+		$form->url->caption = _t( 'URL:', 'sp' );
 
 //		$form->append('static','disclaimer', _t('<p><em><small>Email address is not published</small></em></p>', 'sp'));
 //		$form->disclaimer->move_into($form->commenterinfo);
 
-		$form->append('fieldset', 'contentbox', _t('Comment', 'sp'));
-		$form->move_before($form->contentbox, $form->content);
+		$form->append( 'fieldset', 'contentbox', _t( 'Comment', 'sp' ) );
+		$form->move_before( $form->contentbox, $form->content );
 
-		$form->content->move_into($form->contentbox);
-		$form->content->caption = _t('(Required)', 'sp');
+		$form->content->move_into( $form->contentbox );
+		$form->content->caption = _t( '(Required)', 'sp' );
 
-		$form->submit->caption = _t('Submit', 'sp');
+		$form->submit->caption = _t( 'Submit', 'sp' );
 	}
 
 }

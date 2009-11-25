@@ -4,8 +4,8 @@
 		<!--begin primary content-->
 		<div id="primarycontent" class="hfeed">
 			<div class="hentry">
-						<h2 class="entry-title"><?php _e( "Error 404: Not Found.", "sp"); ?></h2>
-						<p class="entry-content"><?php _e( "URL does not exist on", "sp" ); ?>
+						<h2 class="entry-title"><?php _e( 'Error 404: Not Found.', 'sp' ); ?></h2>
+						<p class="entry-content"><?php _e( 'URL does not exist on', 'sp' ); ?>
 						<a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>" rel="home"> <?php Options::out( 'title' ); ?></a>.
 						</p>
 			</div>

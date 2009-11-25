@@ -2,10 +2,10 @@
 
 	<?php $theme->display ( 'searchform' ); ?>
 
-	<?php if( count( $pages ) > 0) : /* Requires support in $theme->add_template_vars(). */ ?>
+	<?php if ( count( $pages ) > 0) : /* Requires support in $theme->add_template_vars(). */ ?>
 		<h2 id="pagelist-title"><?php _e( 'Pages', 'sp' ); ?></h2>
 		<ul id="pagelist">
-		<?php if( Plugins::is_loaded( 'Page Menu' ) ) :
+		<?php if ( Plugins::is_loaded( 'Page Menu' ) ) :
 			$theme->pagemenu();
 		else :
 			foreach( $pages as $page )

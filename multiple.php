@@ -1,7 +1,7 @@
 <?php $theme->display ( 'header' ); ?>
 	<div id="content">
 		<div id="primarycontent" class="hfeed">
-			<?php if( isset( $criteria ) ) : ?>
+			<?php if ( isset( $criteria ) ) : ?>
 				<h1 class="archive-title"><?php $theme->multiple_heading( htmlspecialchars( $criteria ) ); ?></h1>
 			<?php else : ?>
 				<h1 class="archive-title"><?php $theme->multiple_heading( "" ); ?></h1>

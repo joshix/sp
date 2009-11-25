@@ -5,17 +5,17 @@ if ( ! defined('HABARI_PATH' ) ) { die( 'Not labeled for individual sale.' ); }
 		Session::messages_out();
 	}
 ?>
-<?php if(!$post->info->comments_disabled || $post->comments->approved->count > 0) : ?>
+<?php if ( !$post->info->comments_disabled || $post->comments->approved->count > 0 ) : ?>
 <div id="comments">
 	<h4 class="comments-heading"><?php echo $post->comments->moderated->count; ?> <?php echo _n( 'Comment', 'Comments', $post->comments->moderated->count, 'sp' ); ?> <?php _e( 'on', 'sp' ); ?> <em><?php echo $post->title; ?></em></h4>
 	<ol id="comment-list" class="comments">
 
-		<?php
-		if ( $post->comments->moderated->count ) :
+		<?php if ( $post->comments->moderated->count ) :
 			foreach ( $post->comments->moderated as $comment ) :
 				$class = 'class="comment';
-				if ( $comment->status == Comment::STATUS_UNAPPROVED )
+				if ( $comment->status == Comment::STATUS_UNAPPROVED ) {
 					$class .= '-unapproved';
+				}
 				$class .= '"';
 		?>
 		
@@ -31,17 +31,17 @@ if ( ! defined('HABARI_PATH' ) ) { die( 'Not labeled for individual sale.' ); }
 
 		<?php endforeach; ?>
 
-		<?php elseif(!$post->info->comments_disabled) : ?>
+		<?php elseif ( !$post->info->comments_disabled ) : ?>
 			<li><?php _e( 'There are currently no comments.',  'sp' ); ?></li>
 		<?php endif; ?>
 
 	</ol>
-<?php if ( !$post->info->comments_disabled ) :
-	$post->comment_form()->out();
-elseif($post->comments->approved->count > 0) : ?> 
-	<div id="comments-closed">
+	<?php if ( !$post->info->comments_disabled ) :
+		$post->comment_form()->out();
+	elseif ( $post->comments->approved->count > 0 ) : ?> 
+		<div id="comments-closed">
 		<p><?php _e( 'Comments closed.', 'sp' ); ?></p>
-	</div>
-<?php endif; ?>
+		</div>
+	<?php endif; ?>
 </div>
 <?php endif; ?>
