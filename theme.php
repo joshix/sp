@@ -39,10 +39,10 @@ class SpTheme extends Theme
 			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => Post::status( 'published' ) ) ) );
 		}
 
-		/* Pretty tag names incl. spaces */
-		if ( Controller::get_var( 'tag' ) != '') {
-			$tag_text = DB::get_value( 'SELECT term_display FROM {terms} WHERE term=:tag', array( Controller::get_var( 'tag' ) ) );
-			$this->assign( 'tag_text', $tag_text );
+		// Pretty tag names including spaces. In lieu of a Controller::get_var('tag_display').
+		if ( Controller::get_var( 'tag' ) != '' ) {
+                        $term_display = DB::get_value( 'SELECT term_display FROM {terms} WHERE term=:tag', array( Controller::get_var( 'tag' ) ) );
+                        $this->assign( 'tag_display', htmlentities( $term_display, ENT_QUOTES, 'UTF-8' ) );
 		}
 
 		parent::add_template_vars();
