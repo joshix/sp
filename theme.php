@@ -54,11 +54,10 @@ class SpTheme extends Theme
 	/* Hook header output to insert some meta robots directives. */
 	public function filter_theme_call_header( $return, $theme )
 	{
-		$r = $this->request;
-		if ( $r->display_search ) {
+		if ( $this->request->display_search ) {
 			return '<meta name="robots" content="noindex, nofollow">'."\n";
 		}
-		elseif ( $r->display_entries_by_date || $r->display_entries_by_tag ) {
+		elseif ( $this->request->display_entries_by_date || $this->request->display_entries_by_tag ) {
 			return '<meta name="robots" content="noindex, follow">'."\n";
 		}
 		return $return;
@@ -69,23 +68,21 @@ class SpTheme extends Theme
 		$title = '';
 
 		$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
-		$r = $this->request;
 		$stitle = Options::get( 'title' );
-		$ps = $this->posts;
-		if ( $r->display_entries_by_date && count( $hv ) > 0 ) {
+		if ( $this->request->display_entries_by_date && count( $hv ) > 0 ) {
 			$date = '';
 			$date .= isset( $hv['year'] ) ? $hv['year'] : '' ;
 			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '' ;
 			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '' ;
 			$title = $date . ' - ' . $stitle;
 		}
-		elseif ( $r->display_entries_by_tag && isset( $hv['tag'] ) ) {
+		elseif ( $this->request->display_entries_by_tag && isset( $hv['tag'] ) ) {
 			$title = $this->tag_display . ' - ' . $stitle;
 		}
-		elseif ( ( $r->display_entry || $r->display_page ) && isset( $ps ) ) {
-			$title = strip_tags( $ps->title ) . ' - ' . $stitle;
+		elseif ( ( $this->request->display_entry || $this->request->display_page ) && isset( $this->posts ) ) {
+			$title = strip_tags( $this->posts->title ) . ' - ' . $stitle;
 		}
-		elseif ( $r->display_search ) {
+		elseif ( $this->request->display_search ) {
 			/* Set title to the search criteria, or to EMPTY if there were none. */
 			$q = Controller::get_var( 'criteria' );
 			$title = ( $q != '' ) ? htmlspecialchars( $q ) . ' - ' . $stitle . _t( ' Search', 'sp' ) :
