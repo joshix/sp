@@ -12,18 +12,17 @@ class SpTheme extends Theme
 {
 	private $handler_vars = array();
 
-	/* Filter output on theme init. */
 	public function action_init_theme()
 	{
 		$this->load_text_domain('sp');
 
-		/* Apply Format::autop() to comment content. */
+		// Apply Format::autop() to comment content.
 		Format::apply('autop', 'comment_content_out');
-		/* Apply Format::tag_and_list() to post tags... */
+		// Apply Format::tag_and_list() to post tags...
 		Format::apply('tag_and_list', 'post_tags_out');
-		/* Only triggered by <!--more--> tag, not by length. */
+		// Only triggered by <!--more--> tag, not by length.
 		Format::apply_with_hook_params('more', 'post_content_out', _t('--More--', 'sp'), 0, 0);
-		/* Excerpt output. echo $post->content_excerpt. */
+		// Excerpt output. echo $post->content_excerpt.
 		Format::apply_with_hook_params('more', 'post_content_excerpt', _t('--More--', 'sp'), 60, 1);	
 	}
 
@@ -43,7 +42,6 @@ class SpTheme extends Theme
 		if ( Controller::get_var( 'tag' ) != '' ) {
 			$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
 			// posts[]->tags[tagth]'s representation preserves spaces. (?)
-			// Stays out of SQL, anyway.
 			$tag_display = ( count( $this->posts ) > 0 ) ? $this->posts[0]->tags[$hv['tag']] : $hv['tag'];
 			$this->assign( 'tag_display', htmlentities( $tag_display, ENT_QUOTES, 'UTF-8' ) );
 		}
@@ -51,7 +49,7 @@ class SpTheme extends Theme
 		parent::add_template_vars();
 	}
 
-	/* Hook header output to insert some meta robots directives. */
+	// Hook header output to insert meta robots directives.
 	public function filter_theme_call_header( $return, $theme )
 	{
 		if ( $this->request->display_search ) {
@@ -83,7 +81,7 @@ class SpTheme extends Theme
 			$title = strip_tags( $this->posts->title ) . ' - ' . $stitle;
 		}
 		elseif ( $this->request->display_search ) {
-			/* Set title to the search criteria, or to EMPTY if there were none. */
+			// Set title to the search criteria, or to EMPTY if there were none.
 			$q = Controller::get_var( 'criteria' );
 			$title = ( $q != '' ) ? htmlspecialchars( $q ) . ' - ' . $stitle . _t( ' Search', 'sp' ) :
 						sprintf( _t( 'Empty %1$s Search', 'sp' ), $stitle );
@@ -104,15 +102,15 @@ class SpTheme extends Theme
 		$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
 		if ( $this->request->display_entries_by_date && count( $hv ) > 0 ) {
 			$date = '';
-			$date .= isset( $hv['year'] ) ? $hv['year'] : '' ;
-			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '' ;
-			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '' ;
+			$date .= isset( $hv['year'] ) ? $hv['year'] : '';
+			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '';
+			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '';
 			$heading = _t( 'Dated ', 'sp' ) . $date;
 		}
 		return $heading;
 	}
 
-	/* Customize comment formui. Add fieldsets. */
+	// Customize comment formui. Add fieldsets.
 	public function action_form_comment($form)
 	{
 		$form->append( 'fieldset', 'commenterinfo', _t( 'About You', 'sp' ) );
@@ -126,9 +124,6 @@ class SpTheme extends Theme
 
 		$form->url->move_into( $form->commenterinfo );
 		$form->url->caption = _t( 'URL:', 'sp' );
-
-//		$form->append('static','disclaimer', _t('<p><em><small>Email address is not published</small></em></p>', 'sp'));
-//		$form->disclaimer->move_into($form->commenterinfo);
 
 		$form->append( 'fieldset', 'contentbox', _t( 'Comment', 'sp' ) );
 		$form->move_before( $form->contentbox, $form->content );
