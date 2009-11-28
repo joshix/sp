@@ -41,8 +41,11 @@ class SpTheme extends Theme
 
 		// Pretty tag names including spaces. In lieu of a Controller::get_var('tag_display').
 		if ( Controller::get_var( 'tag' ) != '' ) {
-                        $term_display = DB::get_value( 'SELECT term_display FROM {terms} WHERE term=:tag', array( Controller::get_var( 'tag' ) ) );
-                        $this->assign( 'tag_display', htmlentities( $term_display, ENT_QUOTES, 'UTF-8' ) );
+			$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
+			// posts[]->tags[tagth]'s representation preserves spaces. (?)
+			// Stays out of SQL, anyway.
+			$tag_display = ( count( $this->posts ) > 0 ) ? $this->posts[0]->tags[$hv['tag']] : $hv['tag'];
+			$this->assign( 'tag_display', htmlentities( $tag_display, ENT_QUOTES, 'UTF-8' ) );
 		}
 
 		parent::add_template_vars();
@@ -77,8 +80,7 @@ class SpTheme extends Theme
 			$title = $date . ' - ' . $stitle;
 		}
 		elseif ( $r->display_entries_by_tag && isset( $hv['tag'] ) ) {
-			$tag = ( count( $ps ) > 0 ) ? $ps[0]->tags[$hv['tag']] : $hv['tag'] ;
-			$title = htmlspecialchars( $tag ) . ' - ' . $stitle;
+			$title = $this->tag_display . ' - ' . $stitle;
 		}
 		elseif ( ( $r->display_entry || $r->display_page ) && isset( $ps ) ) {
 			$title = strip_tags( $ps->title ) . ' - ' . $stitle;
