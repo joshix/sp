@@ -69,9 +69,9 @@ class SpTheme extends Theme
 		$stitle = Options::get( 'title' );
 		if ( $this->request->display_entries_by_date && count( $hv ) > 0 ) {
 			$date = '';
-			$date .= isset( $hv['year'] ) ? $hv['year'] : '' ;
-			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '' ;
-			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '' ;
+			$date .= isset( $hv['year'] ) ? $hv['year'] : '';
+			$date .= isset( $hv['month'] ) ? '-' . $hv['month'] : '';
+			$date .= isset( $hv['day'] ) ? '-' . $hv['day'] : '';
 			$title = $date . ' - ' . $stitle;
 		}
 		elseif ( $this->request->display_entries_by_tag && isset( $hv['tag'] ) ) {
