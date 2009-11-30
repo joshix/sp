@@ -14,16 +14,16 @@ class SpTheme extends Theme
 
 	public function action_init_theme()
 	{
-		$this->load_text_domain('sp');
+		$this->load_text_domain( 'sp' );
 
 		// Apply Format::autop() to comment content.
-		Format::apply('autop', 'comment_content_out');
+		Format::apply( 'autop', 'comment_content_out' );
 		// Apply Format::tag_and_list() to post tags...
-		Format::apply('tag_and_list', 'post_tags_out');
+		Format::apply( 'tag_and_list', 'post_tags_out' );
 		// Only triggered by <!--more--> tag, not by length.
-		Format::apply_with_hook_params('more', 'post_content_out', _t('--More--', 'sp'), 0, 0);
+		Format::apply_with_hook_params( 'more', 'post_content_out', _t( '--More--', 'sp' ), 0, 0 );
 		// Excerpt output. echo $post->content_excerpt.
-		Format::apply_with_hook_params('more', 'post_content_excerpt', _t('--More--', 'sp'), 60, 1);	
+		Format::apply_with_hook_params( 'more', 'post_content_excerpt', _t( '--More--', 'sp' ), 60, 1 );	
 	}
 
 	/**
