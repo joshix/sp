@@ -7,37 +7,37 @@
  * 	#footer
  */
 
-body,p,h1,h2,h3,h4,h5,p,ul,ol,dl,input,textarea{
+body,p,h1,h2,h3,h4,h5,p,ul,ol,dl,input,textarea {
 	font-family: "lucida grande", "liberation sans", verdana, arial, helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 18px;
 }
 
-body{
+body {
 	background: #fff url(img/background.png) repeat-x left top;
 	margin-top: 0.6em;
 }
 
-#wrapper{
+#wrapper {
 	margin: 0 auto;
 	width: 900px;
 }
 
-#header{
+#header {
 	border-bottom: 2px solid #ccc;
 	height: 62px;
 }
 
-#content{
+#content {
 	margin: 10px;
 }
 
-#primarycontent{
+#primarycontent {
 	float: left;
 	width: 650px;
 }
 
-#secondarycontent{
+#secondarycontent {
 	border-left: 1px dotted #ddd;
 	float: right;
 	font-size: 92%; 
@@ -45,7 +45,7 @@ body{
 	width: 190px;
 }
 
-#footer{
+#footer {
 	border-top: 1px solid #ccc; 
 	clear: both; 
 	font-size: 90%;
@@ -54,116 +54,116 @@ body{
 	padding: 10px 0 0;
 }
 
-#header a:link, #header a:visited{
+#header a:link, #header a:visited {
 	color: #000;
 	text-decoration: none;
 }
 
-#header a:hover, #header a:active{
+#header a:hover, #header a:active {
 	background: transparent;
 	color: #760909;
 	text-decoration: none;
 }
 
-#header h1{
+#header h1 {
 	float: left;
 	font: bold 410% georgia, serif;
 	letter-spacing: -1px;
 	margin: 0;
 }
 
-#header h2{
+#header h2 {
 	float: right;
 	font: normal 12px verdana, arial, sans-serif;
 	letter-spacing: normal;
 	margin: 2.35em 0.2em 0 0;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
 	font-family: georgia, times, serif;
 	font-weight: normal;
 	letter-spacing: -1px;
 }
 
-h2{
+h2 {
 	font-size: 200%;
 }
 
-h3{
+h3 {
 	font-size: 170%;
 }
 
-h4{
+h4 {
 	border-bottom: 1px dotted #bbb;
 	font-size: 150%;
 }
 
-h5{
+h5 {
 	background: #ffd;
 	border-bottom: 1px dotted #aaa;
 	font-size: 150%;
 }
 
 /* Tag and date collection views have a title style. */
-.archive-title{
+.archive-title {
 	color: #ccc;
 	font-size: 250%;
 }
-.archive-subtitle{
+.archive-subtitle {
 	font-style: italic;
 }
 
-ul{
+ul {
 	list-style-type: square;
 }
 
-hr{
+hr {
 	color: #ffffff;
 	background-color: #ffffff;
 	border-top: 1px dotted #bbbbbb;
 	margin-bottom: 1em;
 }
 
-blockquote{
+blockquote {
 	color: #555;
 	border-left: 5px solid #ccc;
 	padding: 0 1em;
 }
 
-code{
+code {
 	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
 }
 
-pre{
+pre {
 	font: normal 12px "bitstream vera sans mono", monaco, "lucida console", "courier new", courier, serif;
 	overflow: auto;
 	padding-left: 2em;
 }
 
-.hentry{
+.hentry {
 	margin: 0 0 3em 0;
 }
 
-.entry-title{
+.entry-title {
 	font-size: 250%;
 	letter-spacing: -1.5px; 
 	line-height: 99%;
 }
 
-.entry-title a:link, .entry-title a:visited{
+.entry-title a:link, .entry-title a:visited {
 	color: #111;
 	font-weight: normal;
 	text-decoration: none;
 }
 
-.entry-title a:hover, .entry-title a:active{
+.entry-title a:hover, .entry-title a:active {
 	background: transparent;
 	color: #000;
 	font-weight: normal;
 	text-decoration: underline;
 }
 
-.posted{
+.posted {
 	color: #a9a9a9;
 	font-family: helvetica, arial, verdana, sans-serif;
 	font-size: 115%;
@@ -171,11 +171,11 @@ pre{
 	margin: -0.7em 0 0.55em 0.2em;
 }
 
-.posted .author.vcard .fn{
+.posted .author.vcard .fn {
 	font-weight: bold;
 }
 
-.posted a.url, .posted a:hover.url{
+.posted a.url, .posted a:hover.url {
 	color: #a9a9a9;
 	background: transparent;
 	text-decoration: none;
@@ -183,19 +183,19 @@ pre{
 
 /* Supress margin beneath sub-lists. */
 .entry-content ul ul, .entry-content ul ol,
-.entry-content ol ol, .entry-content ol ul{
+.entry-content ol ol, .entry-content ol ul {
 	margin-bottom: 0;
 }
 
-.clear{
+.clear {
 	clear: both;
 }
 
-br.downpad{
+br.downpad {
 	margin: 0 0 33px;
 }
 
-ul.entry-meta{
+ul.entry-meta {
 	background: #eee;
 	border: 1px solid #ddd;
 	clear: both;
@@ -206,156 +206,158 @@ ul.entry-meta{
 	padding: 5px;
 }
 
-.entry-meta a:link, .entry-meta a:visited{
+.entry-meta a:link, .entry-meta a:visited {
 	border-bottom: 1px dotted #aaa;
 	color: #555;
 	text-decoration: none;
 }
 
-.entry-meta a:hover, .entry-meta a:active{
+.entry-meta a:hover, .entry-meta a:active {
 	color: #fff;
 }
 
-ol.comments, ol.trackbacks{
+ol.comments, ol.trackbacks {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-li.comment, li.trackback{
+li.comment, li.trackback {
 	border: 2px solid #ddd;
 	margin: 0 0 1.5em;
 	padding: 1em;
 }
 
-li.comment.preview{
+li.comment.preview {
 	background: #ffc;
 	border: 3px solid #fab444;
 	margin: 0 0 1.5em;
 	padding: 1em;
 }
 
-.comment-head{
+.comment-head {
 	font-weight: bold;
 	margin-bottom: 1em;
 }
 
-.comment-meta{
+.comment-meta {
 	background: #f2f2f2;
 	border: 1px solid #ddd;
 	padding: 4px;
 }
 
-.comment-author{
+.comment-author {
 	letter-spacing: -1px;
 }
 
-.comment-head abbr{
+.comment-head abbr {
 	color: #999;
 	padding-left:4px;
 }
 
-.comment p{
+.comment p {
 	margin: 1.25em 0;
 	padding-left:24px;
 	padding-right:48px;
 }
 
-.navigation{
+.navigation {
 	display: block;
 	font-size: 10px;
 	margin-bottom: 48px;
 }
 
-.navigation .current-page{
+.navigation .current-page {
 	background: #ccc;
 	border: 1px dotted #bbb;
 	text-decoration: none;
 }
 
-#pagenav.navigation{
+#pagenav.navigation {
 	text-align: center;
 }
 
-#postnav.navigation .prev-entry-link{
+#postnav.navigation .prev-entry-link {
 	float: left;
 }
 
-#postnav.navigation .next-entry-link{
+#postnav.navigation .next-entry-link {
 	float:right;
 }
 
 /*
- * Button styles derived from Blueprint CSS +/- Habari Admin Styles.
+ * Input button styles derived from Blueprint CSS.
  * See LICENSE-BLUEPRINT.
  */
-input[type=button], input[type=submit], button{
-  display:block;
-  float:none;
+input[type=button], input[type=submit], button {
+  display: block;
+  float: none;
   margin: 0.7em 0.5em 0.7em 0;
-  padding:4px 10px 3px 7px;
-  border:1px outset #dedede;
-  background-color:#f5f5f5;
-  font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-  text-decoration:none;
-  font-weight:bold;
-  color:#565656;
-  width:auto;
-  overflow:visible;
+  padding: 4px 10px 3px 7px;
+  border: 1px outset #dedede;
+  background-color: #f5f5f5;
+  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #565656;
+  width: auto;
+  overflow: visible;
 }
-input[type=button]:hover, input[type=submit]:hover, button:hover{
-  background-color:#f5f5f5;
-  border:1px outset #dedede;
-  color:#565656;
+
+input[type=button]:hover, input[type=submit]:hover, button:hover {
+  background-color: #f5f5f5;
+  border: 1px outset #dedede;
+  color: #565656;
 }
-input[type=button]:active, input[type=submit]:active, button:active{
-  background-color:#aaa;
-  border-top:1px inset #000;
-  border-left:1px inset #000;
-  color:#565656;
+
+input[type=button]:active, input[type=submit]:active, button:active {
+  background-color: #aaa;
+  border-top: 1px inset #000;
+  border-left: 1px inset #000;
+  color: #565656;
 }
 
 /* Secondarycontent ("sidebar") */
-#secondarycontent h2, #secondarycontent h3{ 
+#secondarycontent h2, #secondarycontent h3 { 
 	font: bold 14px "lucida grande", verdana, arial, helvetica, sans-serif;
 	margin-bottom: 0.1em;
 }
 
-#secondarycontent h2 a:link, #secondarycontent h2 a:visited{
+#secondarycontent h2 a:link, #secondarycontent h2 a:visited {
 	color: #000;
 	text-decoration: none;
 }
-#secondarycontent h2 a:hover, #secondarycontent h2 a:active{
+#secondarycontent h2 a:hover, #secondarycontent h2 a:active {
 	background: transparent;
 	text-decoration: underline;
 }
 
-#secondarycontent #rss{
+#secondarycontent #rss {
 	margin-bottom: 1.2em;
 }
 
-#secondarycontent ul{
+#secondarycontent ul {
 	list-style-type: none;
 	margin: 0 0 2em;
 	padding: 0;
 }
 
-#secondarycontent ul ul ul{
+#secondarycontent ul ul ul {
 	margin: 0;
 	padding: 0;
 }
 
-#secondarycontent ul li li li{
+#secondarycontent ul li li li {
 	list-style-type: square;
 	margin:0px 0px 0px 1.5em;
 }
 
-#secondarycontent ul li li li li{
+#secondarycontent ul li li li li {
 	list-style-type: disc;
 	margin:0px 0px 0px 1.5em;
 }
 
-#secondarycontent #twitterbox img.avatar{
+#secondarycontent #twitterbox img.avatar {
 	float: left;
 	height: 24px;
 	margin: 0;
@@ -363,23 +365,23 @@ input[type=button]:active, input[type=submit]:active, button:active{
 	width: 24px;
 }
 
-#footer a:link, #footer a:visited{
+#footer a:link, #footer a:visited {
 	color: #000;
 }
 
-#footer a:hover, #footer a:active{
+#footer a:hover, #footer a:active {
 	color: #fff;
 	background: #000;
 }
 
-#footer p{
+#footer p {
 	float: left; 
 	margin: 0;
 	padding: 0; 
 	width: 40%;
 }
 
-#footer ul{
+#footer ul {
 	float: right;
 	list-style-type: none;
 	margin: 0;
@@ -388,39 +390,39 @@ input[type=button]:active, input[type=submit]:active, button:active{
 	width: 40%;
 }
 
-#footer li{
+#footer li {
 	display: inline;
 	margin: 0;
 	padding: 0 0 0 1em;
 }
 
-abbr{
+abbr {
 	border: none;
 	text-decoration: none;
 }
 
-cite{
+cite {
 	font-style: normal;
 }
 
-a img{
+a img {
 	border: none;
 	margin: 0;
 	padding: 0;
 }
 
-a:link, a:visited{
+a:link, a:visited {
 	color: #555;
 	text-decoration: underline;
 }
 
-a:hover, a:active{
+a:hover, a:active {
 	background: #000;
 	color: #fff;
 	text-decoration: underline;
 }
 
-.caps { 
+.caps  { 
 	font-variant: small-caps;
 	letter-spacing: 1px;
 	text-transform: lowercase;
@@ -428,47 +430,47 @@ a:hover, a:active{
 	line-height:1%;
 }
 
-th{
+th {
 	background: #eee;
 }
 
-p img{
+p img {
 	max-width: 100%;
 	padding: 0;
 }
 
-.aligncenter, div.aligncenter, img.centered{
+.aligncenter, div.aligncenter, img.centered {
 	display: block;
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-img.alignleft{
+img.alignleft {
 	display: inline;
 	margin: 0 7px 2px 0;
 	padding: 4px;
 }
 
-img.alignright{
+img.alignright {
 	display: inline;
 	margin: 0 0 2px 7px;
 	padding: 4px;
 }
 
-.alignleft{
+.alignleft {
 	float: left
 }
 
-.alignright{
+.alignright {
 	float: right;
 }
 
-.center{
+.center {
 	text-align: center;
 }
 
-.hidden{
+.hidden {
 	display: none;
 }
 
@@ -476,58 +478,58 @@ img.alignright{
  * Comment Form style derived from Mzingi.
  * And re-derived after change to use FormUI.
  */
-#comment_form{
+#comment_form {
 	padding-top: 25px;
 }
 
-fieldset{
+fieldset {
 	margin: 1em 0; /*  space out the fieldsets a little*/
 	padding: 1em;
 	border : 1px solid #ccc;
 	background-color:#F5F5F5
 }
 
-legend{
+legend {
 	font-weight: bold;
 }
 
-form p{
+form p {
   position: relative;
 	width: 100%;
 }
 
-label{
+label {
 	float: left;
 	width: 10em;
 	font-size: 10px;
 }
 
-input, textarea{
+input, textarea {
 	font: normal 12px "bitstream vera sans", verdana, sans-serif;
 }
 
-input{
+input {
 	width: 176px;
 }
 
-input.submit{
+input.submit {
 	width: auto;
 }
 
-div#submit{
+div#submit {
 	margin-bottom: 1.5em;
 }
 
-textarea{
+textarea {
 	width: 580px;
 	height: 200px;
 }
 
-#comments input#name, #comments input#email, #comments input#url{
+#comments input#name, #comments input#email, #comments input#url {
 	width: 320px;
 }
 
-label .required{
+label .required {
 	color: #760909;
 	font-size: 10px;
 	font-style: italic;
