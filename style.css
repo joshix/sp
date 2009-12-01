@@ -104,11 +104,11 @@ h5 {
 	font-size: 150%;
 }
 
-/* Tag and date collection views have a title style. */
-.archive-title {
+.archive-title { /* Tag and date archives title style. */
 	color: #ccc;
 	font-size: 250%;
 }
+
 .archive-subtitle {
 	font-style: italic;
 }
@@ -181,9 +181,8 @@ pre {
 	text-decoration: none;
 }
 
-/* Supress margin beneath sub-lists. */
 .entry-content ul ul, .entry-content ul ol,
-.entry-content ol ol, .entry-content ol ul {
+.entry-content ol ol, .entry-content ol ul { /* Supress margin beneath sub-lists. */
 	margin-bottom: 0;
 }
 
@@ -285,10 +284,9 @@ li.comment.preview {
 	float:right;
 }
 
-/*
- * Input button styles derived from Blueprint CSS.
- * See LICENSE-BLUEPRINT.
- */
+
+/*- BUTTONS on input elements. After Blueprint. */
+
 input[type=button], input[type=submit], button {
   display: block;
   float: none;
@@ -317,7 +315,9 @@ input[type=button]:active, input[type=submit]:active, button:active {
   color: #565656;
 }
 
-/* Secondarycontent ("sidebar") */
+
+/*- SECONDARYCONTENT ("sidebar") */
+
 #secondarycontent h2, #secondarycontent h3 { 
 	font: bold 14px "lucida grande", verdana, arial, helvetica, sans-serif;
 	margin-bottom: 0.1em;
@@ -365,6 +365,9 @@ input[type=button]:active, input[type=submit]:active, button:active {
 	width: 24px;
 }
 
+
+/*- FOOTER */
+
 #footer a:link, #footer a:visited {
 	color: #000;
 }
@@ -395,6 +398,9 @@ input[type=button]:active, input[type=submit]:active, button:active {
 	margin: 0;
 	padding: 0 0 0 1em;
 }
+
+
+/*- UTILITY */
 
 abbr {
 	border: none;
@@ -474,16 +480,15 @@ img.alignright {
 	display: none;
 }
 
-/*
- * Comment Form style derived from Mzingi.
- * And re-derived after change to use FormUI.
- */
+
+/*- FORMS (esp. comment). After Mzingi. */
+
 #comment_form {
 	padding-top: 25px;
 }
 
 fieldset {
-	margin: 1em 0; /*  space out the fieldsets a little*/
+	margin: 1em 0; /* Make less crowded. */
 	padding: 1em;
 	border : 1px solid #ccc;
 	background-color:#F5F5F5
