@@ -113,25 +113,25 @@ class SpTheme extends Theme
 	// Customize comment formui. Add fieldsets.
 	public function action_form_comment($form)
 	{
-		$form->append( 'fieldset', 'commenterinfo', _t( 'About You', 'sp' ) );
-		$form->move_before( $form->commenterinfo, $form->commenter );
+		$form->append( 'fieldset', 'cf_commenterinfo', _t( 'About You', 'sp' ) );
+		$form->move_before( $form->cf_commenterinfo, $form->cf_commenter );
 
-		$form->commenter->move_into( $form->commenterinfo );
-		$form->commenter->caption = _t( 'Name:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required', 'sp' ) : '' ) . '</span>';
+		$form->cf_commenter->move_into( $form->cf_commenterinfo );
+		$form->cf_commenter->caption = _t( 'Name:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required', 'sp' ) : '' ) . '</span>';
 
-		$form->email->move_into( $form->commenterinfo );
-		$form->email->caption = _t( 'Email:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required - not published', 'sp' ) : '' ) . '</span>';
+		$form->cf_email->move_into( $form->cf_commenterinfo );
+		$form->cf_email->caption = _t( 'Email:', 'sp' ) . '<span class="required">' . ( Options::get('comments_require_id' ) == 1 ? ' *' . _t( 'Required - not published', 'sp' ) : '' ) . '</span>';
 
-		$form->url->move_into( $form->commenterinfo );
-		$form->url->caption = _t( 'URL:', 'sp' );
+		$form->cf_url->move_into( $form->cf_commenterinfo );
+		$form->cf_url->caption = _t( 'URL:', 'sp' );
 
-		$form->append( 'fieldset', 'contentbox', _t( 'Comment', 'sp' ) );
-		$form->move_before( $form->contentbox, $form->content );
+		$form->append( 'fieldset', 'cf_contentbox', _t( 'Comment', 'sp' ) );
+		$form->move_before( $form->cf_contentbox, $form->cf_content );
 
-		$form->content->move_into( $form->contentbox );
-		$form->content->caption = _t( '(Required)', 'sp' );
+		$form->cf_content->move_into( $form->cf_contentbox );
+		$form->cf_content->caption = _t( '(Required)', 'sp' );
 
-		$form->submit->caption = _t( 'Submit', 'sp' );
+		$form->cf_submit->caption = _t( 'Submit', 'sp' );
 	}
 
 }
