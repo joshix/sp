@@ -237,9 +237,12 @@ li.comment, li.trackback {
 	padding: 1em;
 }
 
-li.comment.preview {
-	background: #ffc;
-	border: 3px solid #fab444;
+li.comment-unapproved, li.trackback-unapproved {
+	border: 3px solid #000099;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #2020A9;
 	margin: 0 0 1.5em;
 	padding: 1em;
 }
