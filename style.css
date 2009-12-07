@@ -38,7 +38,6 @@ body {
 }
 
 #secondarycontent {
-	border-left: 1px dotted #ddd;
 	float: right;
 	font-size: 92%; 
 	padding-left: 15px;
