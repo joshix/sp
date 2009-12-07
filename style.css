@@ -197,6 +197,9 @@ br.downpad {
 ul.entry-meta {
 	background: #eee;
 	border: 1px solid #ddd;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 	clear: both;
 	font-size: 10px;
 	line-height: normal;
@@ -215,6 +218,11 @@ ul.entry-meta {
 	color: #fff;
 }
 
+h4.comments-heading {
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+
 ol.comments, ol.trackbacks {
 	list-style-type: none;
 	margin: 0;
@@ -223,6 +231,9 @@ ol.comments, ol.trackbacks {
 
 li.comment, li.trackback {
 	border: 2px solid #ddd;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 	margin: 0 0 1.5em;
 	padding: 1em;
 }
@@ -242,6 +253,9 @@ li.comment.preview {
 .comment-meta {
 	background: #f2f2f2;
 	border: 1px solid #ddd;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 	padding: 4px;
 }
 
@@ -293,6 +307,9 @@ input[type=button], input[type=submit], button {
   margin: 0.7em 0.5em 0.7em 0;
   padding: 4px 10px 3px 7px;
   border: 1px outset #dedede;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   background-color: #f5f5f5;
   font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
   text-decoration: none;
@@ -465,7 +482,7 @@ img.alignright {
 }
 
 .alignleft {
-	float: left
+	float: left;
 }
 
 .alignright {
@@ -488,10 +505,13 @@ img.alignright {
 }
 
 fieldset {
+	background-color:#F5F5F5;
+	border : 1px solid #ccc;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 	margin: 1em 0; /* Make less crowded. */
 	padding: 1em;
-	border : 1px solid #ccc;
-	background-color:#F5F5F5
 }
 
 legend {
