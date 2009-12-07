@@ -270,7 +270,7 @@ li.comment-unapproved, li.trackback-unapproved {
 	padding-left:4px;
 }
 
-.comment p {
+.comment-content p {
 	margin: 1.25em 0;
 	padding-left:24px;
 	padding-right:48px;
