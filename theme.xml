@@ -3,7 +3,7 @@
 	<name>sp</name>
 	<author url="http://labs.utopian.net">Utopian.net Laboratories</author>
 	<url>http://labs.utopian.net/habari/theme/sp/</url>
-	<version>9</version>
+	<version>11</version>
 	<template_engine>rawphpengine</template_engine>
 	<description><![CDATA[Sp imitates and updates the appearance of Hardy's Scribbish theme for blogs, for Habari.]]></description>
 	<copyright>2009</copyright>
