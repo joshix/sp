@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-25 14:22-0800\n"
-"PO-Revision-Date: 2010-05-14 16:25-0800\n"
+"PO-Revision-Date: 2010-05-14 16:40-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Marcis G <by.marcis@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -101,7 +101,7 @@ msgstr "з "
 
 #: loginform.php:2
 msgid "Login failed."
-msgstr ""
+msgstr "Гэты ўваход некарэктны."
 
 #: loginform.php:6
 msgid "Logged in as"
@@ -163,7 +163,7 @@ msgstr "Тэгі з "
 #: theme.php:25
 #: theme.php:27
 msgid "--More--"
-msgstr ""
+msgstr "больш"
 
 #: theme.php:89
 msgid " Search"
