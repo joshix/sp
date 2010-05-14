@@ -1,22 +1,19 @@
-# SP LOCALIZABLE STRINGS.
-# Copyright (C) 2009 UTOPIAN.NET
-# This file is distributed under the same license as the SP package.
-# FIRST AUTHOR <JOSH@UTOPIAN.NET>, 2009.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: SP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-18 03:39-0700\n"
-"PO-Revision-Date: 2010-05-05 12:26+0200\n"
-"Last-Translator: Marcis G <zhr@tut.by>\n"
-"Language-Team: Pat.Clausnitzer <pat.clausnitzer@gmail.com>\n"
+"POT-Creation-Date: 2009-11-25 14:22-0800\n"
+"PO-Revision-Date: 2010-05-14 15:46-0800\n"
+"Last-Translator: Josh Wood <josh@utopian.net>\n"
+"Language-Team: Marcis G <by.marcis@gmail.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Belarusian\n"
 "X-Poedit-Country: BELARUS\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;_t;_n;_ne\n"
+"Plural-Forms: nplurals=2; plural=n>1\n"
 
 #: 404.php:7
 msgid "Error 404: Not Found."
@@ -27,10 +24,12 @@ msgid "URL does not exist on"
 msgstr "УРЛ не існуе ў "
 
 #: comments.php:10
-#: commform.php:33
 #: entrymeta.php:9
+#: theme.php:134
 msgid "Comment"
-msgstr "Comments"
+msgid_plural "Comments"
+msgstr[0] "Каментар"
+msgstr[1] "Каментары"
 
 #: comments.php:10
 msgid "on"
@@ -47,56 +46,6 @@ msgstr "Зараз няма каментароў."
 #: comments.php:43
 msgid "Comments closed."
 msgstr "Каментары зачыненыя."
-
-#: commform.php:15
-msgid "About You"
-msgstr "Аб вас"
-
-#: commform.php:17
-#: loginform.php:14
-msgid "Name:"
-msgstr "Імя:"
-
-#: commform.php:17
-#: commform.php:35
-msgid "Required"
-msgstr "Патрабуецца"
-
-#: commform.php:22
-msgid "Email:"
-msgstr "Email:"
-
-#: commform.php:22
-msgid "Required; Not published"
-msgstr "Патрабуецца; Не будзе апублікавана"
-
-#: commform.php:22
-msgid "Not Published"
-msgstr "Не будзе апублікавана"
-
-#: commform.php:27
-msgid "URL:"
-msgstr "УРЛ:"
-
-#: commform.php:40
-msgid "Submit"
-msgstr "Адпраўка"
-
-#: db_profiling.php:28
-msgid "DB Profiling"
-msgstr "DB профiлiнг"
-
-#: db_profiling.php:39
-msgid "Time to Execute:"
-msgstr "Час для выканання:"
-
-#: db_profiling.php:53
-msgid "Total Number of Queries:"
-msgstr "Агульны лік запытаў:"
-
-#: db_profiling.php:54
-msgid "Total Time Executing Queries:"
-msgstr "Агульны лік выконваемых запытаў:"
 
 #: entry.multiple.php:16
 #: home.php:16
@@ -151,8 +100,8 @@ msgid "from"
 msgstr "з "
 
 #: loginform.php:2
-msgid "That login is incorrect."
-msgstr "Гэты ўваход некарэктны."
+msgid "Login failed."
+msgstr ""
 
 #: loginform.php:6
 msgid "Logged in as"
@@ -165,6 +114,11 @@ msgstr "Рэдагаваць ваш профіль"
 #: loginform.php:7
 msgid "Log out"
 msgstr "Выхад"
+
+#: loginform.php:14
+#: theme.php:123
+msgid "Name:"
+msgstr "Імя:"
 
 #: loginform.php:18
 msgid "Password:"
@@ -198,15 +152,7 @@ msgstr "Пошук"
 msgid "Pages"
 msgstr "Старонкі"
 
-#: sidebar.php:32
-msgid "Tags"
-msgstr "Тэгі"
-
-#: sidebar.php:39
-msgid "Archives"
-msgstr "Архівы"
-
-#: sidebar.php:44
+#: sidebar.php:17
 msgid "Syndicate (Atom)"
 msgstr "Сiндыкацыя (Atom)"
 
@@ -214,30 +160,82 @@ msgstr "Сiндыкацыя (Atom)"
 msgid "Tagged with"
 msgstr "Тэгі з "
 
-#: theme.php:78
-#: theme.php:81
-#: theme.php:83
-#, php-format
-msgid "%1$s - %2$s"
-msgstr "%1$s - %2$s"
+#: theme.php:25
+#: theme.php:27
+msgid "--More--"
+msgstr ""
 
-#: theme.php:87
-#, php-format
-msgid "%1$s - %2$s Search"
-msgstr "%1$s - %2$s Пошук"
+#: theme.php:89
+msgid " Search"
+msgstr "Пошук"
 
-#: theme.php:88
+#: theme.php:90
 #, php-format
 msgid "Empty %1$s Search"
 msgstr "Ачысціць %1$s пошук"
 
-#: theme.php:92
-#, php-format
-msgid "%1$s &rsaquo; Page %2$s"
-msgstr "%1$s &rsaquo; старонка %2$s"
+#: theme.php:96
+msgid " &rsaquo; Page "
+msgstr "&rsaquo; старонка"
 
-#: theme.php:107
-#, php-format
-msgid "Dated %s"
-msgstr "Датавана %s"
+#: theme.php:111
+msgid "Dated "
+msgstr "Датавана"
 
+#: theme.php:119
+msgid "About You"
+msgstr "Аб вас"
+
+#: theme.php:123
+msgid "Required"
+msgstr "Патрабуецца"
+
+#: theme.php:126
+msgid "Email:"
+msgstr "Email:"
+
+#: theme.php:126
+msgid "Required - not published"
+msgstr "Патрабуецца - Не будзе апублікавана"
+
+#: theme.php:129
+msgid "URL:"
+msgstr "УРЛ:"
+
+#: theme.php:138
+msgid "(Required)"
+msgstr "Патрабуецца"
+
+#: theme.php:140
+msgid "Submit"
+msgstr "Адпраўка"
+
+#~ msgid "Not Published"
+#~ msgstr "Не будзе апублікавана"
+
+#~ msgid "DB Profiling"
+#~ msgstr "DB профiлiнг"
+
+#~ msgid "Time to Execute:"
+#~ msgstr "Час для выканання:"
+
+#~ msgid "Total Number of Queries:"
+#~ msgstr "Агульны лік запытаў:"
+
+#~ msgid "Total Time Executing Queries:"
+#~ msgstr "Агульны лік выконваемых запытаў:"
+
+#~ msgid "That login is incorrect."
+#~ msgstr "Гэты ўваход некарэктны."
+
+#~ msgid "Tags"
+#~ msgstr "Тэгі"
+
+#~ msgid "Archives"
+#~ msgstr "Архівы"
+
+#~ msgid "%1$s - %2$s"
+#~ msgstr "%1$s - %2$s"
+
+#~ msgid "%1$s - %2$s Search"
+#~ msgstr "%1$s - %2$s Пошук"
