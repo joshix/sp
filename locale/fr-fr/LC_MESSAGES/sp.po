@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sp v6\n"
+"Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-25 14:22-0800\n"
 "PO-Revision-Date: \n"
@@ -220,12 +220,15 @@ msgstr "Envoyez"
 
 #~ msgid "Tags"
 #~ msgstr "Mots-Clefs"
+
 #~ msgid "Archives"
 #~ msgstr "Archives"
+
 #~ msgid "%1$s - %2$s"
 #~ msgstr "%1$s - %2$s"
+
 #~ msgid "Not Published"
 #~ msgstr "Non Affiché"
+
 #~ msgid "Not labeled for individual sale."
 #~ msgstr "Non marqué en vente individuelle."
-

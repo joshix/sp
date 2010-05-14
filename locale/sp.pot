@@ -1,17 +1,17 @@
 # SP LOCALIZABLE STRINGS.
-# Copyright (C) 2009 UTOPIAN.NET
+# Copyright (C) 2009, 2010 UTOPIAN.NET
 # This file is distributed under the same license as the SP package.
-# JOSH WOOD <JOSH@UTOPIAN.NET>, 2009.
+# JOSH WOOD <JOSH@UTOPIAN.NET>, 2010.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-25 14:22-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
