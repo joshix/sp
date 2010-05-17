@@ -1,5 +1,7 @@
 	<div id="secondarycontent">
 
+	<?php Plugins::act( 'theme_sidebar_top' ); ?>
+
 	<?php $theme->display ( 'searchform' ); ?>
 
 	<?php if ( count( $pages ) > 0) : /* Requires support in $theme->add_template_vars(). */ ?>
@@ -14,6 +16,10 @@
 		</ul>
 	<?php endif; ?>
 
+	<?php $theme->area( 'sidebar' ); ?>
+
 	<h3 id="rss"><a href="<?php URL::out( 'atom_feed', array( 'index' => '1' ) ); ?>"><?php _e( 'Syndicate (Atom)', 'sp' ); ?></a></h3>
+
+	<?php Plugins::act( 'theme_sidebar_bottom' ); ?>
 
 	</div><!--#secondarycontent-->
