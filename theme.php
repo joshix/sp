@@ -91,7 +91,7 @@ class SpTheme extends Theme
 		return $title;
 	}
 
-	public function theme_multiple_heading( $theme,$criteria )
+	public function theme_multiple_heading( $theme, $criteria )
 	{
 		$heading = '';
 
