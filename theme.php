@@ -34,10 +34,6 @@ class SpTheme extends Theme
 	 */	 	 	 	 	
 	public function add_template_vars() 
 	{
-		if ( !$this->template_engine->assigned( 'pages' ) ) {
-			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => Post::status( 'published' ) ) ) );
-		}
-
 		// Pretty tag names including spaces. In lieu of a Controller::get_var('tag_display').
 		if ( Controller::get_var( 'tag' ) != '' ) {
 			$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
