@@ -8,12 +8,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-25 14:22-0800\n"
+"POT-Creation-Date: 2010-05-18 02:53-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
@@ -25,7 +25,7 @@ msgstr ""
 msgid "URL does not exist on"
 msgstr ""
 
-#: comments.php:10 entrymeta.php:9 theme.php:134
+#: comments.php:10 entrymeta.php:9 theme.php:124
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] ""
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Log out"
 msgstr ""
 
-#: loginform.php:14 theme.php:123
+#: loginform.php:14 theme.php:116
 msgid "Name:"
 msgstr ""
 
@@ -139,11 +139,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: sidebar.php:6
-msgid "Pages"
-msgstr ""
-
-#: sidebar.php:17
+#: sidebar.php:7
 msgid "Syndicate (Atom)"
 msgstr ""
 
@@ -151,51 +147,51 @@ msgstr ""
 msgid "Tagged with"
 msgstr ""
 
-#: theme.php:25 theme.php:27
+#: theme.php:24 theme.php:26
 msgid "--More--"
 msgstr ""
 
-#: theme.php:89
+#: theme.php:82
 msgid " Search"
 msgstr ""
 
-#: theme.php:90
+#: theme.php:83
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:96
+#: theme.php:89
 msgid " &rsaquo; Page "
 msgstr ""
 
-#: theme.php:111
+#: theme.php:104
 msgid "Dated "
 msgstr ""
 
-#: theme.php:119
+#: theme.php:112
 msgid "About You"
 msgstr ""
 
-#: theme.php:123
+#: theme.php:116
 msgid "Required"
 msgstr ""
 
-#: theme.php:126
+#: theme.php:119
 msgid "Email:"
 msgstr ""
 
-#: theme.php:126
+#: theme.php:119
 msgid "Required - not published"
 msgstr ""
 
-#: theme.php:129
+#: theme.php:122
 msgid "URL:"
 msgstr ""
 
-#: theme.php:138
+#: theme.php:128
 msgid "(Required)"
 msgstr ""
 
-#: theme.php:140
+#: theme.php:130
 msgid "Submit"
 msgstr ""

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-25 14:22-0800\n"
-"PO-Revision-Date: 2010-05-14 16:08-0800\n"
+"POT-Creation-Date: 2010-05-18 02:53-0700\n"
+"PO-Revision-Date: 2010-05-18 02:59-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Utopian.net Laboratories <utopian.labs@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Non trouvée sur"
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:134
+#: theme.php:124
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] "Commentaire"
@@ -118,7 +118,7 @@ msgid "Log out"
 msgstr "Déconnexion"
 
 #: loginform.php:14
-#: theme.php:123
+#: theme.php:116
 msgid "Name:"
 msgstr "Nom :"
 
@@ -153,11 +153,7 @@ msgstr "des Resultats plus Anciens"
 msgid "Search"
 msgstr "Recherche"
 
-#: sidebar.php:6
-msgid "Pages"
-msgstr "Pages"
-
-#: sidebar.php:17
+#: sidebar.php:7
 msgid "Syndicate (Atom)"
 msgstr "Souscrivez (Atom)"
 
@@ -165,58 +161,61 @@ msgstr "Souscrivez (Atom)"
 msgid "Tagged with"
 msgstr "avec Mot-Clef"
 
-#: theme.php:25
-#: theme.php:27
+#: theme.php:24
+#: theme.php:26
 msgid "--More--"
 msgstr "--Plus--"
 
-#: theme.php:89
+#: theme.php:82
 #, fuzzy
 msgid " Search"
 msgstr "Recherche"
 
-#: theme.php:90
+#: theme.php:83
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:96
+#: theme.php:89
 #, fuzzy
 msgid " &rsaquo; Page "
 msgstr "%1$s &rsaquo; Page %2$s"
 
-#: theme.php:111
+#: theme.php:104
 msgid "Dated "
 msgstr ""
 
-#: theme.php:119
+#: theme.php:112
 msgid "About You"
 msgstr "Votre Information"
 
-#: theme.php:123
+#: theme.php:116
 msgid "Required"
 msgstr "Requis"
 
-#: theme.php:126
+#: theme.php:119
 msgid "Email:"
 msgstr "E-mail :"
 
-#: theme.php:126
+#: theme.php:119
 msgid "Required - not published"
 msgstr "Requis - non affiché"
 
-#: theme.php:129
+#: theme.php:122
 msgid "URL:"
 msgstr "URL:"
 
-#: theme.php:138
+#: theme.php:128
 #, fuzzy
 msgid "(Required)"
 msgstr "Requis"
 
-#: theme.php:140
+#: theme.php:130
 msgid "Submit"
 msgstr "Envoyez"
+
+#~ msgid "Pages"
+#~ msgstr "Pages"
 
 #~ msgid "Tags"
 #~ msgstr "Mots-Clefs"
