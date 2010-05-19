@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-18 02:53-0700\n"
-"PO-Revision-Date: 2010-05-18 18:38-0800\n"
+"PO-Revision-Date: 2010-05-18 18:43-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Marcis G <by.marcis@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr "Памылка 404: Не знойдзена."
 
 #: 404.php:8
 msgid "URL does not exist on"
-msgstr "УРЛ не існуе ў "
+msgstr "УРЛ не існуе ў"
 
 #: comments.php:10
 #: entrymeta.php:9
@@ -33,7 +33,7 @@ msgstr[1] "Каментары"
 
 #: comments.php:10
 msgid "on"
-msgstr "у "
+msgstr "у"
 
 #: comments.php:28
 msgid "In moderation"
@@ -89,7 +89,7 @@ msgstr "Уверх"
 
 #: footer.php:5
 msgid "Habari Engine"
-msgstr "Рухавічок Habari "
+msgstr "Рухавічок Habari"
 
 #: footer.php:7
 msgid "sp Style"
@@ -97,7 +97,7 @@ msgstr "sp стыль"
 
 #: footer.php:8
 msgid "from"
-msgstr "з "
+msgstr "з"
 
 #: loginform.php:2
 msgid "Login failed."
@@ -105,7 +105,7 @@ msgstr "Гэты ўваход некарэктны."
 
 #: loginform.php:6
 msgid "Logged in as"
-msgstr "Вы ўвайшлі як "
+msgstr "Вы ўвайшлі як"
 
 #: loginform.php:6
 msgid "Edit Your Profile"
@@ -130,11 +130,11 @@ msgstr "Уваход"
 
 #: search.php:5
 msgid "Results for"
-msgstr "Вынікі для "
+msgstr "Вынікі для"
 
 #: search.php:19
 msgid "No results for"
-msgstr "Няма вынікаў для "
+msgstr "Няма вынікаў для"
 
 #: search.php:23
 msgid "Newer Results"
@@ -154,7 +154,7 @@ msgstr "Сiндыкацыя (Atom)"
 
 #: tag.php:6
 msgid "Tagged with"
-msgstr "Тэгі з "
+msgstr "Тэгі з"
 
 #: theme.php:24
 #: theme.php:26
