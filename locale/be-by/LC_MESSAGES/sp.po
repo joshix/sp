@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-18 02:53-0700\n"
-"PO-Revision-Date: 2010-05-18 02:58-0800\n"
+"PO-Revision-Date: 2010-05-18 18:38-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Marcis G <by.marcis@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -176,7 +176,7 @@ msgstr "%1$s &rsaquo; старонка %2$s"
 
 #: theme.php:104
 msgid "Dated "
-msgstr "Датавана"
+msgstr "Датавана "
 
 #: theme.php:112
 msgid "About You"
