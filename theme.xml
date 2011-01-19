@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<theme>
+<pluggable type="theme">
 	<name>sp</name>
 	<author url="http://labs.utopian.net">Utopian.net Laboratories</author>
 	<url>http://labs.utopian.net/habari/theme/sp/</url>
@@ -13,4 +13,4 @@
 			<description><![CDATA[Sidebar]]></description>
 		</area>
 	</areas>
-</theme>
+</pluggable>
