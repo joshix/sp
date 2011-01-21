@@ -3,7 +3,7 @@
 		<div id="primarycontent" class="hfeed">
 			<!--begin loop-->
 			<!--Tag Page Title-->
-			<h1 class="archive-title"><?php _e( 'Tagged with', 'sp' ); ?> <span class="archive-subtitle"><?php echo $theme->tag_display; ?></span></h1>
+			<h1 class="archive-title"><?php _e( 'Tagged with', 'sp' ); ?> <span class="archive-subtitle"><?php echo $theme->tag; ?></span></h1>
 			<?php foreach ( $posts as $post ) : ?>
 				<div id="post-<?php echo $post->id; ?>" class="hentry">
 <?php include 'entryhead.php'; ?>

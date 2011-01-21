@@ -34,14 +34,7 @@ class SpTheme extends Theme
 	 */	 	 	 	 	
 	public function add_template_vars() 
 	{
-		// Pretty tag names including spaces. In lieu of a Controller::get_var('tag_display').
-		if ( Controller::get_var( 'tag' ) != '' ) {
-			$hv = ( count( $this->handler_vars ) != 0 ) ? $this->handler_vars : Controller::get_handler()->handler_vars;
-			// posts[]->tags[tagth]'s representation preserves spaces. (?)
-			$tag_display = ( count( $this->posts ) > 0 ) ? $this->posts[0]->tags[$hv['tag']] : $hv['tag'];
-			$this->assign( 'tag_display', htmlentities( $tag_display, ENT_QUOTES, 'UTF-8' ) );
-		}
-
+		
 		parent::add_template_vars();
 	}
 
@@ -71,7 +64,7 @@ class SpTheme extends Theme
 			$title = $date . ' - ' . $stitle;
 		}
 		elseif ( $this->request->display_entries_by_tag && isset( $hv['tag'] ) ) {
-			$title = $this->tag_display . ' - ' . $stitle;
+			$title = $theme->tag . ' - ' . $stitle;
 		}
 		elseif ( ( $this->request->display_entry || $this->request->display_page ) && isset( $this->posts ) ) {
 			$title = strip_tags( $this->posts->title ) . ' - ' . $stitle;
