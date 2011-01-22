@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-18 02:53-0700\n"
-"PO-Revision-Date: 2010-05-18 02:59-0800\n"
+"PO-Revision-Date: 2011-01-21 23:23-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Utopian.net Laboratories <utopian.labs@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Non trouvée sur"
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:124
+#: theme.php:117
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] "Commentaire"
@@ -118,7 +118,7 @@ msgid "Log out"
 msgstr "Déconnexion"
 
 #: loginform.php:14
-#: theme.php:116
+#: theme.php:109
 msgid "Name:"
 msgstr "Nom :"
 
@@ -166,51 +166,51 @@ msgstr "avec Mot-Clef"
 msgid "--More--"
 msgstr "--Plus--"
 
-#: theme.php:82
+#: theme.php:75
 #, fuzzy
 msgid " Search"
 msgstr "Recherche"
 
-#: theme.php:83
+#: theme.php:76
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:89
+#: theme.php:82
 #, fuzzy
 msgid " &rsaquo; Page "
 msgstr "%1$s &rsaquo; Page %2$s"
 
-#: theme.php:104
+#: theme.php:97
 msgid "Dated "
 msgstr ""
 
-#: theme.php:112
+#: theme.php:105
 msgid "About You"
 msgstr "Votre Information"
 
-#: theme.php:116
+#: theme.php:109
 msgid "Required"
 msgstr "Requis"
 
-#: theme.php:119
+#: theme.php:112
 msgid "Email:"
 msgstr "E-mail :"
 
-#: theme.php:119
+#: theme.php:112
 msgid "Required - not published"
 msgstr "Requis - non affiché"
 
-#: theme.php:122
+#: theme.php:115
 msgid "URL:"
 msgstr "URL:"
 
-#: theme.php:128
+#: theme.php:121
 #, fuzzy
 msgid "(Required)"
 msgstr "Requis"
 
-#: theme.php:130
+#: theme.php:123
 msgid "Submit"
 msgstr "Envoyez"
 
