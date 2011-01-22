@@ -6,7 +6,7 @@
 	<version>12</version>
 	<template_engine>rawphpengine</template_engine>
 	<description><![CDATA[Sp imitates and updates Hardy's Scribbish theme for blogs, for Habari.]]></description>
-	<copyright>2010</copyright>
+	<copyright>2011</copyright>
 	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
 	<areas>
 		<area name="sidebar">
