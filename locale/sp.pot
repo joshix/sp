@@ -1,7 +1,7 @@
 # SP LOCALIZABLE STRINGS.
-# Copyright (C) 2009, 2010 UTOPIAN.NET
+# Copyright (C) 2009-2011 UTOPIAN.NET
 # This file is distributed under the same license as the SP package.
-# JOSH WOOD <JOSH@UTOPIAN.NET>, 2010.
+# JOSH WOOD <JOSH@UTOPIAN.NET>, 2011.
 #
 #, fuzzy
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 msgid "URL does not exist on"
 msgstr ""
 
-#: comments.php:10 entrymeta.php:9 theme.php:124
+#: comments.php:10 entrymeta.php:9 theme.php:117
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] ""
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Log out"
 msgstr ""
 
-#: loginform.php:14 theme.php:116
+#: loginform.php:14 theme.php:109
 msgid "Name:"
 msgstr ""
 
@@ -151,47 +151,47 @@ msgstr ""
 msgid "--More--"
 msgstr ""
 
-#: theme.php:82
+#: theme.php:75
 msgid " Search"
 msgstr ""
 
-#: theme.php:83
+#: theme.php:76
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:89
+#: theme.php:82
 msgid " &rsaquo; Page "
 msgstr ""
 
-#: theme.php:104
+#: theme.php:97
 msgid "Dated "
 msgstr ""
 
-#: theme.php:112
+#: theme.php:105
 msgid "About You"
 msgstr ""
 
-#: theme.php:116
+#: theme.php:109
 msgid "Required"
 msgstr ""
 
-#: theme.php:119
+#: theme.php:112
 msgid "Email:"
 msgstr ""
 
-#: theme.php:119
+#: theme.php:112
 msgid "Required - not published"
 msgstr ""
 
-#: theme.php:122
+#: theme.php:115
 msgid "URL:"
 msgstr ""
 
-#: theme.php:128
+#: theme.php:121
 msgid "(Required)"
 msgstr ""
 
-#: theme.php:130
+#: theme.php:123
 msgid "Submit"
 msgstr ""
