@@ -1,6 +1,6 @@
 					<ul class="entry-meta">
 
-					<?php if ( $post->tags ) : ?>
+					<?php if ( count( $post->tags ) ) : ?>
 						<li class="entry-tags"><?php _e( 'Tags:', 'sp' ); ?> <?php echo $post->tags_out; ?></li>
 					<?php endif; ?>
 
