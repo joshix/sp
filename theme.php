@@ -26,18 +26,6 @@ class SpTheme extends Theme
 		Format::apply_with_hook_params( 'more', 'post_content_excerpt', _t( '--More--', 'sp' ), 60, 1 );	
 	}
 
-	/**
-	 * Add additional template variables to the template output.
-	 *
-	 *  This function is executed *after* regular data is assigned to the template.
-	 *  So the values here, unless checked, will overwrite any existing values.
-	 */	 	 	 	 	
-	public function add_template_vars() 
-	{
-		
-		parent::add_template_vars();
-	}
-
 	// Hook header output to insert meta robots directives.
 	public function filter_theme_call_header( $return, $theme )
 	{
