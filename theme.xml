@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pluggable type="theme">
 	<name>sp</name>
+	<class>Sp</class>
 	<author url="http://labs.utopian.net">Utopian.net Laboratories</author>
 	<url>http://labs.utopian.net/habari/theme/sp/</url>
 	<version>12</version>

@@ -1,14 +1,12 @@
 <?php 
 
 /**
- * SpTheme is a custom Theme class for the sp theme.
+ * Sp is a custom Theme class for the sp theme.
  * 
  * @package Habari
  */ 
 
-define( 'THEME_CLASS', 'SpTheme' );
-
-class SpTheme extends Theme
+class Sp extends Theme
 {
 	private $handler_vars = array();
 
