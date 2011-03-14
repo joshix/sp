@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sp v6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-18 03:39-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Madat <translator.baku@gmail.com>\n"
+"Language-Team: Webmestre <translator.baku@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Poedit-Language: Azerbaijani\n"
+"X-Poedit-Country: AZERBAIJAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _t;_e;_n;_ne\n"
+
+#: 404.php:7
+msgid "Error 404: Not Found."
+msgstr "Səhv 404: Tapılmayıb."
+
+#: 404.php:8
+msgid "URL does not exist on"
+msgstr "URL ......da mövcud deyil"
+
+#: comments.php:10
+#: commform.php:33
+#: entrymeta.php:9
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Kommentari"
+msgstr[1] "Kommentariyalar"
+
+#: comments.php:10
+msgid "on"
+msgstr "-da"
+
+#: comments.php:28
+msgid "In moderation"
+msgstr "Moderasiyada"
+
+#: comments.php:35
+msgid "There are currently no comments."
+msgstr "Hal-hazırda orada kommentariyalar yoxdur."
+
+#: comments.php:43
+msgid "Comments closed."
+msgstr "Kommentariyalar bağlıdır."
+
+#: commform.php:15
+msgid "About You"
+msgstr "Sizin haqqında"
+
+#: commform.php:17
+#: loginform.php:14
+msgid "Name:"
+msgstr "Adınız:"
+
+#: commform.php:17
+#: commform.php:35
+msgid "Required"
+msgstr "Tələb olunur"
+
+#: commform.php:22
+msgid "Email:"
+msgstr "Email:"
+
+#: commform.php:22
+msgid "Required; Not published"
+msgstr "Tələb olunur; Dərc olunmamış"
+
+#: commform.php:22
+msgid "Not Published"
+msgstr "Dərc olunmamış"
+
+#: commform.php:27
+msgid "URL:"
+msgstr "URL:"
+
+#: commform.php:40
+msgid "Submit"
+msgstr "Təqdim etmək"
+
+#: db_profiling.php:28
+msgid "DB Profiling"
+msgstr "DB Profilləşmə"
+
+#: db_profiling.php:39
+msgid "Time to Execute:"
+msgstr "İcra olunması üçün vaxt"
+
+#: db_profiling.php:53
+msgid "Total Number of Queries:"
+msgstr "Sualların ümumi miqdarı:"
+
+#: db_profiling.php:54
+msgid "Total Time Executing Queries:"
+msgstr "Sualların icrası üçün ümumi vaxt"
+
+#: entry.multiple.php:16
+#: home.php:16
+#: multiple.php:21
+#: tag.php:18
+msgid "Newer"
+msgstr "Yeni"
+
+#: entry.multiple.php:16
+#: home.php:16
+#: multiple.php:21
+#: tag.php:18
+msgid "Older"
+msgstr "Köhnə"
+
+#: entrymeta.php:4
+msgid "Tags:"
+msgstr "Teqlər"
+
+#: entrymeta.php:9
+msgid "Comments on this post"
+msgstr "Bu posta kommentari"
+
+#: entrymeta.php:9
+msgid "Feed"
+msgstr "Təhciz etmək"
+
+#: entrymeta.php:14
+#: page.single.php:13
+msgid "Edit post"
+msgstr "Postu redaktə etmək"
+
+#: entrymeta.php:14
+#: page.single.php:13
+msgid "Edit"
+msgstr "Redaktə etmək"
+
+#: footer.php:3
+msgid "Top"
+msgstr "Yuxarı"
+
+#: footer.php:5
+msgid "Habari Engine"
+msgstr "Habari mexanizmi"
+
+#: footer.php:7
+msgid "sp Style"
+msgstr "sp Stili"
+
+#: footer.php:8
+msgid "from"
+msgstr "-dan"
+
+#: loginform.php:2
+msgid "That login is incorrect."
+msgstr "O login düzgün deyil"
+
+#: loginform.php:6
+msgid "Logged in as"
+msgstr ".... kimi daxil olunmuşdur"
+
+#: loginform.php:6
+msgid "Edit Your Profile"
+msgstr "Sizin Profaylinizi Redaktə etmək"
+
+#: loginform.php:7
+msgid "Log out"
+msgstr "Çıxmaq"
+
+#: loginform.php:18
+msgid "Password:"
+msgstr "Parol:"
+
+#: loginform.php:23
+msgid "Log in"
+msgstr "Daxil olmaq"
+
+#: search.php:5
+msgid "Results for"
+msgstr "..... dair nəticələr"
+
+#: search.php:19
+msgid "No results for"
+msgstr "........ dair nəticələr yoxdur"
+
+#: search.php:23
+msgid "Newer Results"
+msgstr "Yeni Nəticələr"
+
+#: search.php:23
+msgid "Older Results"
+msgstr "Köhnə nəticələr"
+
+#: searchform.php:4
+msgid "Search"
+msgstr "Axtarış"
+
+#: sidebar.php:6
+msgid "Pages"
+msgstr "Səhifə"
+
+#: sidebar.php:32
+msgid "Tags"
+msgstr "Teqlər"
+
+#: sidebar.php:39
+msgid "Archives"
+msgstr "Arxivlər"
+
+#: sidebar.php:44
+msgid "Syndicate (Atom)"
+msgstr "Sindikat (Atom)"
+
+#: tag.php:6
+msgid "Tagged with"
+msgstr "Teglər ilə"
+
+#: theme.php:78
+#: theme.php:81
+#: theme.php:83
+#, php-format
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#: theme.php:87
+#, php-format
+msgid "%1$s - %2$s Search"
+msgstr "%1$s - %2$s Axtarış"
+
+#: theme.php:88
+#, php-format
+msgid "Empty %1$s Search"
+msgstr "Boş %1$s Axtarış"
+
+#: theme.php:92
+#, php-format
+msgid "%1$s &rsaquo; Page %2$s"
+msgstr "%1$s &rsaquo; Səhifə %2$s"
+
+#: theme.php:107
+#, php-format
+msgid "Dated %s"
+msgstr "Tarixdən %s"
+
