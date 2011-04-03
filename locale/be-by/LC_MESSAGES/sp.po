@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-18 02:53-0700\n"
-"PO-Revision-Date: 2011-01-21 23:25-0800\n"
+"POT-Creation-Date: 2011-04-02 21:15-0700\n"
+"PO-Revision-Date: 2011-04-02 21:29-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Marcis G <by.marcis@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "УРЛ не існуе ў"
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:117
+#: theme.php:103
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] "Каментар"
@@ -116,7 +116,7 @@ msgid "Log out"
 msgstr "Выхад"
 
 #: loginform.php:14
-#: theme.php:109
+#: theme.php:95
 msgid "Name:"
 msgstr "Імя:"
 
@@ -144,11 +144,7 @@ msgstr "Найноўшыя вынікі"
 msgid "Older Results"
 msgstr "Старэйшыя вынікі"
 
-#: searchform.php:4
-msgid "Search"
-msgstr "Пошук"
-
-#: sidebar.php:7
+#: sidebar.php:5
 msgid "Syndicate (Atom)"
 msgstr "Сiндыкацыя (Atom)"
 
@@ -156,55 +152,58 @@ msgstr "Сiндыкацыя (Atom)"
 msgid "Tagged with"
 msgstr "Тэгі з"
 
+#: theme.php:22
 #: theme.php:24
-#: theme.php:26
 msgid "--More--"
 msgstr "больш"
 
-#: theme.php:75
+#: theme.php:61
 msgid " Search"
 msgstr "Пошук"
 
-#: theme.php:76
+#: theme.php:62
 #, php-format
 msgid "Empty %1$s Search"
 msgstr "Ачысціць %1$s пошук"
 
-#: theme.php:82
+#: theme.php:68
 msgid " &rsaquo; Page "
 msgstr "%1$s &rsaquo; старонка %2$s"
 
-#: theme.php:97
+#: theme.php:83
 msgid "Dated "
 msgstr "Датавана "
 
-#: theme.php:105
+#: theme.php:91
 msgid "About You"
 msgstr "Аб вас"
 
-#: theme.php:109
+#: theme.php:95
 msgid "Required"
 msgstr "Патрабуецца"
 
-#: theme.php:112
+#: theme.php:98
 msgid "Email:"
 msgstr "Email:"
 
-#: theme.php:112
+#: theme.php:98
 msgid "Required - not published"
 msgstr "Патрабуецца - Не будзе апублікавана"
 
-#: theme.php:115
+#: theme.php:101
 msgid "URL:"
 msgstr "УРЛ:"
 
-#: theme.php:121
+#: theme.php:107
 msgid "(Required)"
 msgstr "Патрабуецца"
 
-#: theme.php:123
+#: theme.php:109
 msgid "Submit"
 msgstr "Адпраўка"
+
+#~ msgid "Search"
+#~ msgstr "Пошук"
 
 #~ msgid "Pages"
 #~ msgstr "Старонкі"

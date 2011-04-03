@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-18 02:53-0700\n"
-"PO-Revision-Date: 2011-01-21 23:23-0800\n"
+"POT-Creation-Date: 2011-04-02 21:15-0700\n"
+"PO-Revision-Date: 2011-04-02 21:29-0800\n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Utopian.net Laboratories <utopian.labs@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Non trouvée sur"
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:117
+#: theme.php:103
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] "Commentaire"
@@ -118,7 +118,7 @@ msgid "Log out"
 msgstr "Déconnexion"
 
 #: loginform.php:14
-#: theme.php:109
+#: theme.php:95
 msgid "Name:"
 msgstr "Nom :"
 
@@ -149,11 +149,7 @@ msgstr "de plus Noveaux Résultats"
 msgid "Older Results"
 msgstr "des Resultats plus Anciens"
 
-#: searchform.php:4
-msgid "Search"
-msgstr "Recherche"
-
-#: sidebar.php:7
+#: sidebar.php:5
 msgid "Syndicate (Atom)"
 msgstr "Souscrivez (Atom)"
 
@@ -161,58 +157,61 @@ msgstr "Souscrivez (Atom)"
 msgid "Tagged with"
 msgstr "avec Mot-Clef"
 
+#: theme.php:22
 #: theme.php:24
-#: theme.php:26
 msgid "--More--"
 msgstr "--Plus--"
 
-#: theme.php:75
+#: theme.php:61
 #, fuzzy
 msgid " Search"
 msgstr "Recherche"
 
-#: theme.php:76
+#: theme.php:62
 #, php-format
 msgid "Empty %1$s Search"
 msgstr ""
 
-#: theme.php:82
+#: theme.php:68
 #, fuzzy
 msgid " &rsaquo; Page "
 msgstr "%1$s &rsaquo; Page %2$s"
 
-#: theme.php:97
+#: theme.php:83
 msgid "Dated "
 msgstr ""
 
-#: theme.php:105
+#: theme.php:91
 msgid "About You"
 msgstr "Votre Information"
 
-#: theme.php:109
+#: theme.php:95
 msgid "Required"
 msgstr "Requis"
 
-#: theme.php:112
+#: theme.php:98
 msgid "Email:"
 msgstr "E-mail :"
 
-#: theme.php:112
+#: theme.php:98
 msgid "Required - not published"
 msgstr "Requis - non affiché"
 
-#: theme.php:115
+#: theme.php:101
 msgid "URL:"
 msgstr "URL:"
 
-#: theme.php:121
+#: theme.php:107
 #, fuzzy
 msgid "(Required)"
 msgstr "Requis"
 
-#: theme.php:123
+#: theme.php:109
 msgid "Submit"
 msgstr "Envoyez"
+
+#~ msgid "Search"
+#~ msgstr "Recherche"
 
 #~ msgid "Pages"
 #~ msgstr "Pages"

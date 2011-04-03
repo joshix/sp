@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sp v6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-18 02:53-0700\n"
+"POT-Creation-Date: 2011-04-02 21:15-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Josh Wood <josh@utopian.net>\n"
 "Language-Team: Webmestre <translator.baku@gmail.com>\n"
@@ -25,7 +25,7 @@ msgstr "URL ......da mövcud deyil"
 
 #: comments.php:10
 #: entrymeta.php:9
-#: theme.php:117
+#: theme.php:103
 msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] "Kommentari"
@@ -116,7 +116,7 @@ msgid "Log out"
 msgstr "Çıxmaq"
 
 #: loginform.php:14
-#: theme.php:109
+#: theme.php:95
 msgid "Name:"
 msgstr "Adınız:"
 
@@ -144,11 +144,7 @@ msgstr "Yeni Nəticələr"
 msgid "Older Results"
 msgstr "Köhnə nəticələr"
 
-#: searchform.php:4
-msgid "Search"
-msgstr "Axtarış"
-
-#: sidebar.php:7
+#: sidebar.php:5
 msgid "Syndicate (Atom)"
 msgstr "Sindikat (Atom)"
 
@@ -156,60 +152,63 @@ msgstr "Sindikat (Atom)"
 msgid "Tagged with"
 msgstr "Teglər ilə"
 
+#: theme.php:22
 #: theme.php:24
-#: theme.php:26
 msgid "--More--"
 msgstr ""
 
-#: theme.php:75
+#: theme.php:61
 #, fuzzy
 msgid " Search"
 msgstr "Axtarış"
 
-#: theme.php:76
+#: theme.php:62
 #, php-format
 msgid "Empty %1$s Search"
 msgstr "Boş %1$s Axtarış"
 
-#: theme.php:82
+#: theme.php:68
 #, fuzzy
 msgid " &rsaquo; Page "
 msgstr "%1$s &rsaquo; Səhifə %2$s"
 
-#: theme.php:97
+#: theme.php:83
 #, fuzzy
 msgid "Dated "
 msgstr "Tarixdən %s"
 
-#: theme.php:105
+#: theme.php:91
 msgid "About You"
 msgstr "Sizin haqqında"
 
-#: theme.php:109
+#: theme.php:95
 msgid "Required"
 msgstr "Tələb olunur"
 
-#: theme.php:112
+#: theme.php:98
 msgid "Email:"
 msgstr "Email:"
 
-#: theme.php:112
+#: theme.php:98
 #, fuzzy
 msgid "Required - not published"
 msgstr "Tələb olunur; Dərc olunmamış"
 
-#: theme.php:115
+#: theme.php:101
 msgid "URL:"
 msgstr "URL:"
 
-#: theme.php:121
+#: theme.php:107
 #, fuzzy
 msgid "(Required)"
 msgstr "Tələb olunur"
 
-#: theme.php:123
+#: theme.php:109
 msgid "Submit"
 msgstr "Təqdim etmək"
+
+#~ msgid "Search"
+#~ msgstr "Axtarış"
 
 #~ msgid "Not Published"
 #~ msgstr "Dərc olunmamış"
