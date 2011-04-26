@@ -3,10 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?php $theme->title(); ?></title>
-	<meta name="generator" content="Habari">	
-	<link rel="edit" type="application/atom+xml" title="Atom Publishing Protocol" href="<?php URL::out( 'atompub_servicedocument' ); ?>">
-	<link rel="alternate" type="application/atom+xml" title="Atom" href="<?php $theme->feed_alternate(); ?>">
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php URL::out( 'rsd' ); ?>">
+	<meta name="generator" content="Habari">
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php Site::out_url( 'theme' ); ?>/boilerplate/boilerplate.css">
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php Site::out_url( 'theme' ); ?>/style.css" title="sp">
 	<link rel="stylesheet" type="text/css" media="print" href="<?php Site::out_url( 'theme' ); ?>/print.css">
