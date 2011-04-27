@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php Site::out_url( 'theme' ); ?>/boilerplate/boilerplate.css">
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php Site::out_url( 'theme' ); ?>/style.css" title="sp">
 	<link rel="stylesheet" type="text/css" media="print" href="<?php Site::out_url( 'theme' ); ?>/print.css">
-	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="screen, projection" href="<?php Site::out_url( 'theme'); ?>/boilerplate/ie6.css"><![endif]-->
 	<link rel="Shortcut Icon" href="<?php Site::out_url( 'theme' ); ?>/favicon.ico">
 	<?php $theme->header(); ?>
 </head>
