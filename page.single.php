@@ -9,7 +9,7 @@
 						<?php echo $post->content_out; ?>
 					</div>
 					<div class="page-edit">
-						<?php if ( $loggedin ) : ?>
+						<?php if ( $post->get_access()->edit ) : ?>
 						<a href="<?php echo $post->editlink; ?>" title="<?php _e( 'Edit post', 'sp' ); ?>"><?php _e( 'Edit', 'sp' ); ?></a>
 						<?php endif; ?>
 					</div>

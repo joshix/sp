@@ -10,7 +10,7 @@
 						</li>
 					<?php endif; ?>
 
-					<?php if ( $loggedin ) : ?>
+					<?php if ( $post->get_access()->edit ) : ?>
 						<li><a href="<?php echo $post->editlink; ?>" title="<?php _e( 'Edit post', 'sp' ); ?>"><?php _e( 'Edit', 'sp' ); ?></a></li>
 					<?php endif; ?>
 
